@@ -1,0 +1,233 @@
+* {
+   padding: 0;
+   margin: 0;
+    scroll-behavior: smooth;
+    width: auto;
+    box-sizing: border-box;
+   }   
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    background-color: rgba(143, 68, 68, 0.5);
+    color: antiquewhite;
+    backdrop-filter: blur(15px);
+}
+body {
+background-color: rgb(16, 16, 68);
+    color: antiquewhite;
+}
+.text {
+font-family: Arial, sans-serif;
+        font-size: 2em;
+}
+#logo {
+   width: 50px;
+}
+h1{
+ font-style: initial;
+ font-size: xx-large;
+ font-weight: 900;
+}
+nav {
+  width: 50%;
+  max-width: 300px;
+  height: 50px;
+}
+
+nav > ul {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-inline-start: 0;
+  margin-block: 0;
+  height: 100%;
+}
+nav > ul > li {
+  margin: 0 0.2rem;
+  padding: 0.2rem;
+  display: inline-block;
+  height: 40px;
+  font-size: medium;
+}
+nav > ul > li:hover {
+  background-color: #9f9feb;
+  color: #d4447b;
+  cursor: pointer;
+  font-style: oblique;
+  font-weight: 500;
+}
+
+h2 > a {
+  text-decoration: none;
+  color: rgb(148, 148, 179)
+}
+a:hover {
+  color: aquamarine;
+  font-style: oblique;
+}
+#profile-picture {
+  width: 450px;
+  height: 550px;
+  padding-top: 150px;
+}
+#image1 {
+  padding-left: 100px;
+  width: 500px;
+  height: 450px;
+}
+li > a {
+  color: inherit;
+  text-decoration: none;
+}
+.home {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    height: 650px;
+    width: 100vw;
+}
+h2#home-page {
+    display: flex;
+   font-family: 'Times New Roman', Times, serif;
+   font-weight: bolder;
+   font-style: italic;
+   padding-left: 200px;
+   padding-top: 150px;
+        font-size: 2em;
+}
+.about {
+    width: 100vw;
+   height: 700px;
+  background-color: rgb(34, 34, 92);
+}
+#about2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 70px;
+}
+#image {
+  padding-left: 100px;
+  width: 400px;
+}
+h2#about {
+    padding-top: 50px;
+    padding-bottom: 30px;
+  text-align: center;
+  text-shadow: 5px 5px 5px rgb(88, 67, 67);  
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: oblique;
+  font-weight: 700;
+  font-size: 50px;
+}
+section p {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+}
+.text {
+   font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: 900;
+    font-size: 30px;
+    padding: auto; 
+}
+section#hire-me {
+  padding-top: 30px;
+  height: 700px;
+  width: 100vw;
+background-color: rgb(36, 36, 109);
+}
+.form-container {
+   padding: 2rem 2rem;
+    background-color: #27a2a7;
+    color: #00000e;
+    border-radius: 20px;
+    width: 600px;
+    height: 600px;
+    max-width: 700px;
+    min-width: 500px;
+    text-align: center;
+    margin: 0 auto;
+}
+label {
+  margin: 0.5rem 0;
+    display: block;
+}
+h2.touch {
+  font-weight: bolder;
+  font-size: xx-large;
+}
+h3.line {
+  font-weight: bolder;
+  font-size: xx-large;
+}
+form {
+  padding-top: 40px;
+}
+.info {
+  padding: 30px 0 0 10px;
+  display: flex;
+  
+}
+.info label, .info input {
+  display: inline-block;
+  font-size: medium;
+}
+.info input {
+  width: 50%;
+  text-align: left;
+}
+.info label {
+  width: 10%;
+  min-width: 55px;
+  text-align: right;
+}
+#message {
+  font-size: 2rem;
+}
+input, textarea {
+    width: 80%;
+    display: block;
+    min-width: 100px;
+    padding: 1em;
+    margin: 1em auto;
+    background-color: #ffaaff;
+    font-size: 1rem;
+    height: 4em;
+    border-color: white;
+    min-height: 2em;
+    border-radius: 20px;
+  }
+  button {
+    background-color: #ffffff;
+    font-size: 1rem;
+    height: 2em;
+  }
+  button:hover {
+    background-color: pink;
+  }
+  footer {
+  background-color: #1b1b57;
+  height: 100px;
+  color: aquamarine;
+}
+p > a {
+  color: aqua;
+  font-size: x-large;
+  text-decoration: none;
+}
+p > a:hover {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: oblique;
+  color: #d4447b;
+}
+nav ul li a.active {
+    color: #ff6600;
+    font-weight: bold;
+}

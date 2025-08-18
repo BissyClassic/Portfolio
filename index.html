@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<title>
+
+</title>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="portfolio" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <img id="logo" alt="Rachael Abisola" src="./image/B_20250421_181543_0000.png" width="500px">
+    <h1 id="name">Rachael Afolabi</h1>
+    <nav>
+      <ul>
+        <li class="page"><a href="#home-page">Home</a></li>
+        <li class="ab"><a href="#about">About</a></li>
+        <li class="pro"><a href="#projects">Projects</a></li>
+        <li class="con"><a href="#contacts">Contacts</a></li>
+      </ul>
+    </nav>
+    <h2 id="hire"><a href="#hire-me">Hire Me</a></h2>
+  </header>
+  <main>
+    <section class="home" role="region" aria-labelledby="home-page">
+      <pre>
+
+
+
+
+
+
+            <h2 id="home-page">Hi, I'm Rachael,
+ a Front End Developer
+  from Nigeria.</h2></pre>
+      <img id="profile-picture" src="./image/IMG-20241227-WA0092.jpg">
+      </pre>
+    </section>
+
+    <section class="about" role="region" aria-labelledby="about">
+      <h2 id="about">Meet Rachael</h2>
+      <div id="about2">
+        <img alt="image" id="image1" src="./image/IMG-20241227-WA0088.jpg">
+        <pre>
+ <p class="text">
+         Rachael Afolabi is a front end developer,
+         a fashion business startup,
+         based in Nigeria.
+         I am passionate about building
+         websites and application that is used
+         by all and makes life and work 
+         easier for people that uses them. 
+</p>
+</pre>
+      </div>
+    </section>
+
+    <section id="hire-me" role="region" aria-labelledby="hire-me">
+      <div class="form-container">
+        <h2 class="touch">Want to get in touch?</h2>
+        <h3 class="line">Drop me a line!</h3>
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="apikey" value="78b44146-e9b2-40b4-8ca8-187dee802c37">
+          <div class="info">
+            <label for="name">NAME</label>
+            <input type="text" name="name" id="name" required>
+          </div>
+          <div class="info">
+            <label for="email-address">EMAIL ADDRESS</label>
+            <input type="email" id="email-address" name="email" required>
+          </div>
+          <div class="info">
+            <label for="message">FORM LABEL</label>
+            <textarea name="message" id="message" required></textarea>
+          </div>
+          <input type="hidden" name="redirect" value="https://web3forms.com/success">
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p><a href="mailto:rachaelafolabi2021@gmail.com">Email Me</a></p>
+    <p>Phone: +2349079099706</p>
+  </footer>
+  <script>
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+
+    // Highlight active section in navigation
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('nav ul li a');
+
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 100;
+        if (scrollY >= sectionTop) {
+          current = section.getAttribute('id');
+        }
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${current}`) {
+          link.classList.add('active');
+        }
+      });
+    });
+
+    // Basic form validation enhancement
+    document.querySelector('form').addEventListener('submit', function (e) {
+      const emailField = document.querySelector('#email-address');
+      const emailValue = emailField.value.trim();
+      const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+      if (!emailPattern.test(emailValue)) {
+        e.preventDefault();
+        alert('Please enter a valid email address.');
+      }
+    });
+  </script>
+
+</body>
+
+</html>
